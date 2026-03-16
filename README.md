@@ -278,3 +278,108 @@ python analyze_nda.py
 ```
 
 ---
+
+## 📈 How It Works — Analysis Pipeline
+
+```
+   📄 Upload PDF
+        │
+        ▼
+   ┌─────────────┐
+   │  EXTRACTION  │   PyMuPDF extracts text block-by-block
+   └──────┬──────┘
+          ▼
+   ┌─────────────┐
+   │  PROCESSING  │   Smart chunking (1500 chars) with overlap
+   └──────┬──────┘   Risk keyword filtering for relevance ranking
+          ▼
+   ┌─────────────┐
+   │  DETECTION   │   150+ regex patterns scan the full text
+   └──────┬──────┘   Danger phrase combos add bonus scoring
+          ▼
+   ┌─────────────┐
+   │  SCORING     │   Weighted scores → Risk percentage
+   └──────┬──────┘   Category breakdown computed
+          ▼
+   ┌─────────────┐
+   │  AI SUMMARY  │   Flan-T5 generates context-aware summary
+   └──────┬──────┘   Actionable recommendations generated
+          ▼
+   ┌─────────────┐
+   │  REPORT      │   Interactive UI + Downloadable exports
+   └─────────────┘
+```
+
+---
+
+## 🖼️ UI Preview
+
+The application features a **premium glassmorphism dark theme** with:
+
+- 🌊 **Animated gradient headers** — CSS keyframe animations on the title
+- 💎 **Glass-effect cards** — `backdrop-filter: blur()` with translucent backgrounds
+- ✨ **Glow effects** — Color-coded box shadows on risk cards
+- 🎯 **Interactive findings** — Hover transforms with smooth transitions
+- 📊 **Progress bars** — Category-level risk distribution
+- 🏷️ **Severity counters** — Inline badges for Critical/High/Medium/Low
+
+---
+
+## 🤝 Use Cases
+
+| Who | How They Use It |
+|-----|----------------|
+| 🏪 **Small Business Owners** | Review vendor contracts before signing |
+| 👨‍💼 **Freelancers** | Check client agreements for red flags |
+| 🏢 **Startups** | Evaluate partnership NDAs and service agreements |
+| 📚 **Law Students** | Learn contract analysis patterns |
+| 🔬 **Researchers** | Study adversarial language in legal documents |
+
+---
+
+## 📊 Performance Metrics
+
+| Metric | Value |
+|--------|-------|
+| Risk Patterns | **150+** |
+| Risk Categories | **12** |
+| Danger Phrase Combos | **24** |
+| Red Team Detection Rate | **85%+** |
+| Max Risk Score | **500 pts** |
+| Processing Time | **< 10 seconds** |
+| Codebase Size | **2,100+ lines** |
+| AI Models Supported | **2** (Flan-T5 Small / Base) |
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] 🌍 Multi-language contract support (Spanish, French, German)
+- [ ] 📊 GPT-4 / Gemini integration for advanced summarization
+- [ ] 📝 Clause-by-clause annotation with inline highlights
+- [ ] 🔄 Contract comparison (diff two versions)
+- [ ] 📈 Historical risk trend dashboard
+- [ ] 🔌 REST API for enterprise integration
+- [ ] 📱 Mobile-responsive design enhancements
+
+---
+
+## ⚠️ Disclaimer
+
+> **This tool provides automated analysis only.** It is designed to assist — not replace — professional legal advice. Always consult with a qualified attorney before signing any legal document.
+
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=4ECDC4&center=true&vCenter=true&repeat=true&width=500&height=30&lines=Built+with+%E2%9D%A4%EF%B8%8F+for+Small+Businesses" alt="Footer" />
+</p>
+
+<p align="center">
+  <b>Contract Risk Intelligence v2.0</b> — Catch hidden clauses before you sign.
+  <br/>
+  <a href="https://legalguard-ai-project.streamlit.app/">🚀 Try the Live Demo</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made_with-Python_❤️-4ECDC4?style=for-the-badge&labelColor=0f0f1a" alt="Made with Python" />
+</p>
