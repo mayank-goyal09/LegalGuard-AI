@@ -174,3 +174,107 @@ This system was battle-tested against **intentionally adversarial NDA contracts*
 │            └──────────────────┘                           │
 └─────────────────────────────────────────────────────────┘
 ```
+
+### ✨ Premium Features at a Glance
+
+| Feature | Description |
+|:---|:---|
+| 📄 **PDF Upload & Parsing** | PyMuPDF-based extraction with block-level text grouping |
+| 🧠 **150+ Regex Patterns** | Curated for legal language including evasive phrasing |
+| 🤖 **AI Summarization** | Google Flan-T5 generates context-aware risk summaries |
+| 🎭 **Demo Mode** | Built-in Red Team NDA for instant testing |
+| 📊 **Visual Category Breakdown** | Progress bars showing risk distribution across categories |
+| 🔢 **Weighted Risk Scoring** | Each finding has a calibrated score impact (3–25 pts) |
+| 🗂️ **Tabbed Findings View** | Critical & High / Medium / All Findings / Action Items |
+| 💡 **Actionable Recommendations** | Every finding comes with specific negotiation advice |
+| 📥 **Report Export** | Download analysis as TXT or Markdown |
+| 🎨 **Glassmorphism Dark UI** | Premium design with animations, gradients, and glow effects |
+| ⚡ **Danger Phrase Detection** | Bonus detection for multi-word adversarial patterns |
+| 🔄 **Model Selector** | Choose between Flan-T5 Small (fast) or Base (accurate) |
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch" alt="Tech Stack" />
+</p>
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| **Frontend** | Streamlit + Custom CSS | Premium glassmorphism dark UI |
+| **PDF Engine** | PyMuPDF (fitz) | Block-level text extraction |
+| **NLP Core** | Transformers (HuggingFace) | Model loading & inference |
+| **AI Model** | Google Flan-T5 | Intelligent risk summarization |
+| **Text Processing** | LangChain + sentencepiece | Chunking + tokenization |
+| **Embeddings** | sentence-transformers | Semantic analysis support |
+| **Data** | pandas | Structured data handling |
+| **Deployment** | Streamlit Cloud | Production hosting |
+
+---
+
+## 📁 Project Structure
+
+```
+contract-risk-intelligence/
+│
+├── 🎨 app.py                    # Streamlit web app (895 lines)
+│                                 # Premium UI with glassmorphism theme
+│
+├── 📦 src/
+│   ├── __init__.py
+│   ├── 🧠 analyzer.py           # Core engine — 150+ patterns (728 lines)
+│   ├── 📋 processor.py          # Smart text chunking & filtering (202 lines)
+│   └── 🔧 extractor.py          # PDF text extraction via PyMuPDF
+│
+├── 🧪 test_pipeline.py          # End-to-end testing pipeline
+├── 📊 analyze_nda.py            # Standalone NDA analysis + Claude comparison
+├── 📄 extract_pdf.py            # Quick PDF extraction utility
+├── 📄 Red_Team_NDA_Pack.pdf     # Adversarial test contract
+├── 📋 requirements.txt          # Dependencies
+├── 🚫 .gitignore                # Git exclusions
+└── 📖 README.md                 # You are here
+```
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.9 or higher
+- pip package manager
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/mayank-goyal09/LegalGuard-AI.git
+cd LegalGuard-AI
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate        # Linux/Mac
+venv\Scripts\activate           # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Run the Application
+
+```bash
+# Launch the Streamlit web app
+streamlit run app.py
+```
+
+### Run CLI Analysis
+
+```bash
+# Run the full test pipeline
+python test_pipeline.py
+
+# Analyze a specific NDA
+python analyze_nda.py
+```
+
+---
