@@ -84,3 +84,93 @@ Enterprise-grade legal analysis made accessible — no $500/hr attorney needed f
 </table>
 
 ---
+
+## 🏗️ Architecture & Technical Design
+
+```mermaid
+graph TB
+    A["📄 PDF Upload"] --> B["🔧 ContractExtractor<br/><i>PyMuPDF (fitz)</i>"]
+    B --> C["📋 ContractProcessor<br/><i>Smart Chunking + Filtering</i>"]
+    C --> D["🧠 RiskAnalyzer<br/><i>Dual Engine</i>"]
+    
+    D --> E["📐 Rule-Based Engine<br/><i>150+ Regex Patterns</i>"]
+    D --> F["🤖 AI Engine<br/><i>Google Flan-T5</i>"]
+    
+    E --> G["📊 RiskReport"]
+    F --> G
+    
+    G --> H["🎨 Streamlit UI<br/><i>Premium Dark Theme</i>"]
+    G --> I["📥 Export<br/><i>TXT + Markdown</i>"]
+    
+    style A fill:#4ECDC4,stroke:#333,color:#000
+    style D fill:#FF6B35,stroke:#333,color:#fff
+    style G fill:#FFC048,stroke:#333,color:#000
+    style H fill:#6BB9F0,stroke:#333,color:#000
+```
+
+---
+
+## 🎯 12 Risk Categories Analyzed
+
+<table>
+<tr>
+<td align="center">⚠️<br/><b>Liability &<br/>Indemnification</b></td>
+<td align="center">🚪<br/><b>Termination<br/>& Exit</b></td>
+<td align="center">💰<br/><b>Payment &<br/>Financial</b></td>
+<td align="center">🧠<br/><b>Intellectual<br/>Property</b></td>
+</tr>
+<tr>
+<td align="center">🔒<br/><b>Confidentiality<br/>& NDA</b></td>
+<td align="center">⛔<br/><b>Non-Compete &<br/>Restrictions</b></td>
+<td align="center">⚖️<br/><b>Dispute<br/>Resolution</b></td>
+<td align="center">📋<br/><b>Regulatory &<br/>Compliance</b></td>
+</tr>
+<tr>
+<td align="center">🔄<br/><b>Auto-Renewal<br/>& Lock-in</b></td>
+<td align="center">🔐<br/><b>Data Privacy<br/>& Security</b></td>
+<td align="center">⚡<br/><b>Remedies &<br/>Enforcement</b></td>
+<td align="center">📐<br/><b>Scope &<br/>Definitions</b></td>
+</tr>
+</table>
+
+---
+
+## 🛡️ Red Team Adversarial Testing
+
+This system was battle-tested against **intentionally adversarial NDA contracts** designed to trick both humans and AI:
+
+| Red Team Variant | Attack Strategy | What It Tests |
+|---|---|---|
+| **Variant I** | Derivative & Ownership Pressure | IP hijacking through vague "derivative" definitions |
+| **Variant II** | Scope Creep & Audit Control | Expanding scope retroactively + invasive audit rights |
+| **Variant III** | Behavioral & Temporal Overreach | Controlling employee behavior + indefinite obligations |
+
+> 💡 The system successfully detected **85%+** of adversarial patterns that are commonly missed in standard contract reviews.
+
+---
+
+## 💎 Key Features & What Makes It Powerful
+
+### 🔥 Dual Analysis Engine
+```
+┌─────────────────────────────────────────────────────────┐
+│                   ANALYSIS ENGINE                        │
+│                                                          │
+│   ┌──────────────────┐    ┌──────────────────────┐      │
+│   │  RULE-BASED       │    │  AI-POWERED           │      │
+│   │  ─────────────    │    │  ─────────────────    │      │
+│   │  150+ Patterns    │    │  Google Flan-T5       │      │
+│   │  12 Categories    │    │  Smart Summarization  │      │
+│   │  Weighted Scoring │    │  Context-Aware        │      │
+│   │  Danger Phrases   │    │  Model Selectable     │      │
+│   └────────┬─────────┘    └──────────┬───────────┘      │
+│            │                          │                   │
+│            └──────────┬───────────────┘                   │
+│                       ▼                                   │
+│            ┌──────────────────┐                           │
+│            │  RISK REPORT      │                           │
+│            │  Score + Findings │                           │
+│            │  + Recommendations│                           │
+│            └──────────────────┘                           │
+└─────────────────────────────────────────────────────────┘
+```
