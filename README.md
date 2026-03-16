@@ -36,3 +36,51 @@
 </div>
 
 ---
+
+## 🌐 Domain: LegalTech × NLP × Small Business Protection
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### ⚖️ Legal Technology
+Automated contract review that catches what human eyes miss — evasive language, hidden liabilities, and predatory clauses.
+
+</td>
+<td width="33%" align="center">
+
+### 🧠 Natural Language Processing
+150+ curated regex patterns + Google Flan-T5 AI summarization for dual-engine analysis.
+
+</td>
+<td width="33%" align="center">
+
+### 🏪 Small Business Empowerment
+Enterprise-grade legal analysis made accessible — no $500/hr attorney needed for first-pass review.
+
+</td>
+</tr>
+</table>
+
+---
+
+## ⚡ What This Project Does
+
+> Upload any contract PDF → Get instant AI-powered risk analysis with actionable recommendations
+
+<table>
+<tr>
+<td>🔴</td><td><b>CRITICAL</b></td><td>Unlimited liability, IP transfers, waived legal rights, permanent waivers</td>
+</tr>
+<tr>
+<td>🟠</td><td><b>HIGH</b></td><td>One-sided termination, broad indemnification, exclusivity traps, non-compete overreach</td>
+</tr>
+<tr>
+<td>🟡</td><td><b>MEDIUM</b></td><td>Auto-renewal, audit rights, data sharing, perpetual NDAs, scope creep</td>
+</tr>
+<tr>
+<td>🟢</td><td><b>LOW</b></td><td>Standard clauses, jurisdiction, force majeure, survival clauses</td>
+</tr>
+</table>
+
+---
